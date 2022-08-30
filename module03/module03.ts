@@ -3,15 +3,20 @@
 
 /*  EXERCISE 1
     TODO: Declare the Loan interface. */
-
+interface Loan {
+  principle: number;
+  interestRate: number;
+}
 
 /*  TODO: Declare the ConventionalLoan interface. */
-
+interface ConventionalLoan extends Loan {
+  months: number;
+}
 
 
 /*  TODO: Update the calculateInterestOnlyLoanPayment function. */
 
-function calculateInterestOnlyLoanPayment(principle, interestRate) {
+function calculateInterestOnlyLoanPayment(principle: number, interestRate: number) {
   // Calculates the monthly payment of an interest only loan
   let interest = interestRate / 1200; // Calculates the Monthly Interest Rate of the loan
   let payment;
@@ -21,7 +26,7 @@ function calculateInterestOnlyLoanPayment(principle, interestRate) {
 
 /*  TODO: Update the calculateConventionalLoanPayment function. */
 
-function calculateConventionalLoanPayment(principle, interestRate, months) {
+function calculateConventionalLoanPayment(principle: number, interestRate: number, months: number) {
   // Calculates the monthly payment of a conventional loan
   let interest = interestRate / 1200; // Calculates the Monthly Interest Rate of the loan
   let payment;
