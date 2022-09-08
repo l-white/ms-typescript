@@ -1,3 +1,3 @@
 # Microsoft TypeScript Course
 
-Updating README
+Github repository for Microsoft TypeScript Learning Path
